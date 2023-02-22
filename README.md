@@ -1,6 +1,7 @@
 # CountOfRectangles
 
 Count the number of rectangles
+
 Input data: an array of points with x and y coordinates
 "the number of points and their order is set randomly"
 
