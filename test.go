@@ -13,6 +13,10 @@ func sortByX(points [][]int, length int) [][]int {
 				temp := points[0][i]
 				points[0][i] = points[0][j]
 				points[0][j] = temp
+
+				temp = points[1][i]
+				points[1][i] = points[1][j]
+				points[1][j] = temp
 			}
 		}
 	}
@@ -94,7 +98,7 @@ func printPoints(points [][]int, length int) {
 func main() {
 
 	const countPoints = 2 // coordinates x, y
-	length := rand.Intn(50)
+	length := rand.Intn(13)
 	points := make([][]int, countPoints)
 
 	for y := 0; y < countPoints; y++ {
@@ -110,5 +114,4 @@ func main() {
 	printPoints(points, length)
 
 	fmt.Println(countRectangles(points, length))
-
 }
